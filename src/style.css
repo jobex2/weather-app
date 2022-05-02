@@ -1,0 +1,85 @@
+body {
+    background-image: url(weather.jpeg);
+}
+
+.page {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+    height: 100%;
+    width: 100%;
+    
+}
+.main-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.data-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: .6vw;
+}
+
+.temp {
+    font-size: 10vw;
+    padding-right: 1vw;
+}
+
+.data-left div {
+    font-size: 1vw;
+    border-left: solid 2px black;
+    padding-left: 1.5vw;
+}
+
+.temp::after {
+    content: '\00B0 F';
+    font-size: 3rem;
+    position: relative;
+    top: -9rem;
+}
+
+.feels-like::after {
+    content: '\00B0 F';
+    font-size: 1rem;
+    position: relative;
+    top: -0.4rem;
+}
+
+.temp-max::after {
+    content: '\00B0 F';
+    font-size: 1rem;
+    position: relative;
+    top: -0.4rem;
+}
+
+.temp-min::after {
+    content: '\00B0 F';
+    font-size: 1rem;
+    position: relative;
+    top: -0.4rem;
+}
+
+.search {
+    position: relative;
+    right: 15vw;
+    display: flex;
+}
+
+#search-box {
+    height: 1.5vw;
+    width: 12vw;
+    font-size: x-large;
+}
+ #search-btn {
+    height: 1.75vw;
+    width: 5vw;
+ }
+
+ .discription {
+     font-size: 1.5vw;
+ }
+
